@@ -23,9 +23,8 @@ export default {
   },
   methods: {
     deleteTask(id) {
-      console.log('task', id)
-      // this.tasks = this.tasks.filter((task) => task.id !== id)
-    }
+      this.tasks = this.tasks.filter((task) => task.id !== id)
+    },
   },
   created() {
     this.tasks = [
