@@ -1,12 +1,15 @@
 <template>
-    <div>
-      <button class="btn">Add Task</button>
-    </div>
+    <button :style="{ background: color}" class="btn">{{text}}</button>
 </template>
 
 <script>
 export default {
-    name: 'Button',
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: 'Button',
+  props: {
+    text: String,
+    color: String
+  },
 }
 </script>
 
